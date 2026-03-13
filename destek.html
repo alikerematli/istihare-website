@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destek – İstihare App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #0F1A0F;
+            color: #E8E0D0;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .bg-pattern {
+            position: fixed; inset: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(30,60,30,0.4) 0%, transparent 70%);
+            z-index: 0;
+        }
+        .container {
+            max-width: 700px; margin: 0 auto; padding: 60px 24px;
+            position: relative; z-index: 1;
+        }
+        .back { color: #D4AF37; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 32px; }
+        .back:hover { opacity: 0.7; }
+        h1 { color: #D4AF37; font-size: 28px; margin-bottom: 24px; }
+        h2 { color: #D4AF37; font-size: 18px; margin: 28px 0 12px; }
+        p { color: #C0C0A0; font-size: 14px; margin-bottom: 12px; }
+        
+        .contact-card {
+            background: rgba(30,50,30,0.5);
+            border: 1px solid rgba(212,175,55,0.2);
+            border-radius: 16px;
+            padding: 28px;
+            text-align: center;
+            margin: 24px 0;
+        }
+        .contact-card .icon { font-size: 40px; margin-bottom: 12px; }
+        .contact-card h3 { color: #D4AF37; font-size: 16px; margin-bottom: 8px; }
+        .contact-card a { color: #D4AF37; text-decoration: none; font-size: 16px; }
+        .contact-card a:hover { text-decoration: underline; }
+
+        .faq { margin: 32px 0; }
+        .faq-item {
+            background: rgba(30,50,30,0.3);
+            border: 1px solid rgba(212,175,55,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 12px;
+        }
+        .faq-item h3 { color: #E8E0D0; font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+        .faq-item p { color: #A0A080; font-size: 13px; margin-bottom: 0; }
+
+        .footer { text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(212,175,55,0.1); }
+        .footer p { color: #A0A080; font-size: 12px; }
+        .footer a { color: #D4AF37; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="container">
+        <a href="index.html" class="back">← Ana Sayfa</a>
+        
+        <h1>Destek</h1>
+        <p>İstihare uygulamasıyla ilgili sorularınız, önerileriniz veya hata bildirileriniz için bizimle iletişime geçebilirsiniz.</p>
+
+        <div class="contact-card">
+            <div class="icon">📧</div>
+            <h3>E-posta ile İletişim</h3>
+            <a href="mailto:istiharaapp@gmail.com">istiharaapp@gmail.com</a>
+            <p style="margin-top: 12px; font-size: 12px;">Genellikle 24 saat içinde yanıt veriyoruz.</p>
+        </div>
+
+        <h2>Sıkça Sorulan Sorular</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <h3>İstihare nasıl yapılır?</h3>
+                <p>Uygulamadaki "Kur'an İstiharesi" modülünü açın. Uygulama sizi adım adım yönlendirecektir: abdest alın, iki rekât namaz kılın, dua edin ve Kur'an'dan bir sayfa açın.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Rüya tabiri nasıl çalışır?</h3>
+                <p>Rüyanızı yazın, uygulama İbn-i Sirin'in İslami rüya tabiri kaynaklarındaki 2086 sembolü tarayarak anlamlı bir yorum oluşturur. Yapay zeka destekli yorum, yalnızca bu kaynaklara dayanır.</p>
+            </div>
+            <div class="faq-item">
+                <h3>İstihareye yatmak ne kadar sürer?</h3>
+                <p>Uygulama 7 geceye kadar istihare takibi yapmanızı sağlar. Her sabah rüyanızı ve hislerinizi kaydedebilirsiniz.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Verilerim güvende mi?</h3>
+                <p>Evet. Tüm kayıtlarınız yalnızca cihazınızda saklanır. Sunucularımızda kişisel veriniz tutulmaz. Rüya metinleri yalnızca yorum oluşturmak için geçici olarak işlenir ve saklanmaz.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Uygulama dini fetva yerine geçer mi?</h3>
+                <p>Hayır. Uygulama genel rehberlik sağlar. Önemli kararlarınızda mutlaka ehil din âlimlerine danışmanız tavsiye edilir.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 İstihare App. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 8px;"><a href="index.html">Ana Sayfa</a> · <a href="gizlilik.html">Gizlilik Politikası</a></p>
+        </div>
+    </div>
+</body>
+</html>

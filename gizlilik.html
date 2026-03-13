@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası – İstihare App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #0F1A0F;
+            color: #E8E0D0;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .bg-pattern {
+            position: fixed; inset: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(30,60,30,0.4) 0%, transparent 70%);
+            z-index: 0;
+        }
+        .container {
+            max-width: 700px; margin: 0 auto; padding: 60px 24px;
+            position: relative; z-index: 1;
+        }
+        .back { color: #D4AF37; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 32px; }
+        .back:hover { opacity: 0.7; }
+        h1 { color: #D4AF37; font-size: 28px; margin-bottom: 8px; }
+        .date { color: #A0A080; font-size: 12px; margin-bottom: 32px; }
+        h2 { color: #D4AF37; font-size: 18px; margin: 28px 0 12px; }
+        p, li { color: #C0C0A0; font-size: 14px; margin-bottom: 12px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .highlight { background: rgba(212,175,55,0.1); border-left: 3px solid #D4AF37; padding: 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+        .highlight p { margin-bottom: 0; }
+        .footer { text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(212,175,55,0.1); }
+        .footer p { color: #A0A080; font-size: 12px; }
+        .footer a { color: #D4AF37; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="container">
+        <a href="index.html" class="back">← Ana Sayfa</a>
+        
+        <h1>Gizlilik Politikası</h1>
+        <p class="date">Son güncellenme: 13 Mart 2026</p>
+
+        <p>İstihare uygulaması ("Uygulama") olarak, kullanıcılarımızın gizliliğini korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken kişisel bilgilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+
+        <h2>1. Toplanan Veriler</h2>
+        
+        <div class="highlight">
+            <p><strong>İstihare uygulaması kişisel veri toplamaz ve sunucularda saklamaz.</strong></p>
+        </div>
+
+        <p>Uygulama aşağıdaki verileri yalnızca <strong>cihazınızda (yerel depolama)</strong> saklar:</p>
+        <ul>
+            <li>İstihare kayıtları ve geçmişi</li>
+            <li>Rüya tabiri geçmişi</li>
+            <li>Kullanıcı tercihleri</li>
+        </ul>
+        <p>Bu veriler sunucularımıza gönderilmez ve yalnızca sizin cihazınızda tutulur.</p>
+
+        <h2>2. Rüya Tabiri Hizmeti</h2>
+        <p>Rüya tabiri özelliğini kullandığınızda, girdiğiniz rüya metni yapay zeka hizmeti (OpenAI API) aracılığıyla yorumlanmak üzere gönderilir. Bu metin:</p>
+        <ul>
+            <li>Yalnızca yorum oluşturmak amacıyla işlenir</li>
+            <li>İşlem sonrası sunucularda saklanmaz</li>
+            <li>Üçüncü taraflarla paylaşılmaz</li>
+            <li>HTML etiketlerinden ve zararlı içeriklerden temizlenerek güvenli hale getirilir</li>
+        </ul>
+
+        <h2>3. Reklamlar</h2>
+        <p>Uygulamamızda Google AdMob reklam hizmeti kullanılmaktadır. AdMob, kişiselleştirilmemiş (non-personalized) reklamlar gösterir. AdMob'un kendi gizlilik politikası için <a href="https://policies.google.com/privacy" target="_blank" style="color: #D4AF37;">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
+        
+        <p>Uygulamamız iOS'ta Apple'ın Uygulama Takip Şeffaflığı (ATT) çerçevesini kullanır. Reklam takibi için izninizi ister; izin vermemeniz durumunda hiçbir takip yapılmaz.</p>
+
+        <h2>4. Üçüncü Taraf Hizmetleri</h2>
+        <p>Uygulamamız aşağıdaki üçüncü taraf hizmetlerini kullanmaktadır:</p>
+        <ul>
+            <li><strong>Google AdMob</strong> — Reklam gösterimi</li>
+            <li><strong>OpenAI API</strong> — Rüya tabiri yorumlama</li>
+        </ul>
+        <p>Bu hizmetlerin kendi gizlilik politikaları geçerlidir.</p>
+
+        <h2>5. Çocukların Gizliliği</h2>
+        <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel bilgi toplamaz.</p>
+
+        <h2>6. Veri Güvenliği</h2>
+        <p>Tüm kullanıcı verileri cihazınızda yerel olarak saklanır. Rüya metinleri HTTPS şifrelemesi ile güvenli bir şekilde iletilir. Kullanıcı girdileri zararlı içeriklerden (HTML enjeksiyonu vb.) arındırılır.</p>
+
+        <h2>7. Değişiklikler</h2>
+        <p>Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içi bildirimlerle duyurulacaktır.</p>
+
+        <h2>8. İletişim</h2>
+        <p>Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:</p>
+        <p>📧 <a href="mailto:istiharaapp@gmail.com" style="color: #D4AF37;">istiharaapp@gmail.com</a></p>
+
+        <div class="footer">
+            <p>© 2026 İstihare App. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 8px;"><a href="index.html">Ana Sayfa</a> · <a href="destek.html">Destek</a></p>
+        </div>
+    </div>
+</body>
+</html>
