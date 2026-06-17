@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: #0F1A0F;
@@ -229,10 +229,10 @@
         <!-- Hero -->
         <section class="hero">
             <div class="hero-icon">⭐</div>
-            <h1>İstihare</h1>
+            <h1 data-i18n="heroTitle">İstihare</h1>
             <p class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
-            <p>Kur'an-ı Kerim ile istihare yapma rehberi ve İslami kaynaklara dayalı rüya tabiri uygulaması.</p>
-            
+            <p data-i18n="heroDesc">Kur'an-ı Kerim ile istihare yapma rehberi ve İslami kaynaklara dayalı rüya tabiri uygulaması.</p>
+
             <div class="badge">
                 <a href="https://apps.apple.com/app/istihare/id000000000" target="_blank">
                     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store'dan İndir">
@@ -244,18 +244,18 @@
         <section class="features">
             <div class="feature-card">
                 <div class="feature-icon">📖</div>
-                <h3>Kur'an İstiharesi</h3>
-                <p>Geleneksel Kur'an ile istihare yöntemi. Sayfa açma, Allah lafzı sayma ve harf bulma adımlarıyla rehberli istihare.</p>
+                <h3 data-i18n="feat1Title">Kur'an İstiharesi</h3>
+                <p data-i18n="feat1Desc">Geleneksel Kur'an ile istihare yöntemi. Sayfa açma, Allah lafzı sayma ve harf bulma adımlarıyla rehberli istihare.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🔮</div>
-                <h3>Rüya Tabiri</h3>
-                <p>2086 sembol içeren İslami rüya tabiri veritabanı. İbn-i Sirin kaynaklarına dayalı yapay zeka destekli yorum.</p>
+                <h3 data-i18n="feat2Title">Rüya Tabiri</h3>
+                <p data-i18n="feat2Desc">2086 sembol içeren İslami rüya tabiri veritabanı. İbn-i Sirin kaynaklarına dayalı yapay zeka destekli yorum.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🌙</div>
-                <h3>İstihareye Yat</h3>
-                <p>7 geceye kadar istihare takibi. Rüya kaydı, duygu ve huzur seviyesi takibi ile kapsamlı istihare deneyimi.</p>
+                <h3 data-i18n="feat3Title">İstihareye Yat</h3>
+                <p data-i18n="feat3Desc">7 geceye kadar istihare takibi. Rüya kaydı, duygu ve huzur seviyesi takibi ile kapsamlı istihare deneyimi.</p>
             </div>
         </section>
 
@@ -263,30 +263,129 @@
         <section class="stats">
             <div class="stat">
                 <div class="stat-number">2086</div>
-                <div class="stat-label">Rüya Sembolü</div>
+                <div class="stat-label" data-i18n="stat1Label">Rüya Sembolü</div>
             </div>
             <div class="stat">
                 <div class="stat-number">604</div>
-                <div class="stat-label">Kur'an Sayfası</div>
+                <div class="stat-label" data-i18n="stat2Label">Kur'an Sayfası</div>
             </div>
             <div class="stat">
                 <div class="stat-number">28</div>
-                <div class="stat-label">Harf Yorumu</div>
+                <div class="stat-label" data-i18n="stat3Label">Harf Yorumu</div>
             </div>
         </section>
 
         <!-- Footer -->
         <section class="footer">
             <div class="footer-links">
-                <a href="gizlilik.html">Gizlilik Politikası</a>
-                <a href="destek.html">Destek</a>
-                <a href="mailto:istiharaapp@gmail.com">İletişim</a>
+                <a href="gizlilik.html" data-i18n="footerPrivacy">Gizlilik Politikası</a>
+                <a href="destek.html" data-i18n="footerSupport">Destek</a>
+                <a href="mailto:istiharaapp@gmail.com" data-i18n="footerContact">İletişim</a>
             </div>
-            <p>© 2026 İstihare App. Tüm hakları saklıdır.</p>
+            <p data-i18n="footerCopyright">© 2026 İstihare App. Tüm hakları saklıdır.</p>
             <div class="contact">
                 <p style="margin-top: 8px;"><a href="mailto:istiharaapp@gmail.com">istiharaapp@gmail.com</a></p>
             </div>
         </section>
     </div>
+
+    <div id="langSwitch" style="position:fixed;top:14px;right:14px;z-index:9999;display:flex;gap:2px;background:rgba(20,30,20,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(212,175,55,.3);border-radius:999px;padding:4px;"></div>
+    <script>
+    (function(){
+      var SUP=["tr","az","en","ar"];
+      var T={
+        tr:{
+          __title:"İstihare – Kur'an İstiharesi ve Rüya Tabiri",
+          heroTitle:"İstihare",
+          heroDesc:"Kur'an-ı Kerim ile istihare yapma rehberi ve İslami kaynaklara dayalı rüya tabiri uygulaması.",
+          feat1Title:"Kur'an İstiharesi",
+          feat1Desc:"Geleneksel Kur'an ile istihare yöntemi. Sayfa açma, Allah lafzı sayma ve harf bulma adımlarıyla rehberli istihare.",
+          feat2Title:"Rüya Tabiri",
+          feat2Desc:"2086 sembol içeren İslami rüya tabiri veritabanı. İbn-i Sirin kaynaklarına dayalı yapay zeka destekli yorum.",
+          feat3Title:"İstihareye Yat",
+          feat3Desc:"7 geceye kadar istihare takibi. Rüya kaydı, duygu ve huzur seviyesi takibi ile kapsamlı istihare deneyimi.",
+          stat1Label:"Rüya Sembolü",
+          stat2Label:"Kur'an Sayfası",
+          stat3Label:"Harf Yorumu",
+          footerPrivacy:"Gizlilik Politikası",
+          footerSupport:"Destek",
+          footerContact:"İletişim",
+          footerCopyright:"© 2026 İstihare App. Tüm hakları saklıdır."
+        },
+        az:{
+          __title:"İstixarə – Quran İstixarəsi və Yuxu Yozumu",
+          heroTitle:"İstixarə",
+          heroDesc:"Qurani-Kərim ilə istixarə etmə bələdçisi və İslami mənbələrə əsaslanan yuxu yozumu tətbiqi.",
+          feat1Title:"Quran İstixarəsi",
+          feat1Desc:"Ənənəvi Quran ilə istixarə üsulu. Səhifə açma, Allah ləfzini sayma və hərf tapma addımları ilə bələdçili istixarə.",
+          feat2Title:"Yuxu Yozumu",
+          feat2Desc:"2086 simvolu özündə cəmləşdirən İslami yuxu yozumu bazası. İbn Sirin mənbələrinə əsaslanan süni intellekt dəstəkli yozum.",
+          feat3Title:"İstixarəyə Yat",
+          feat3Desc:"7 gecəyə qədər istixarə izləmə. Yuxu qeydi, duyğu və hüzur səviyyəsi izləməsi ilə əhatəli istixarə təcrübəsi.",
+          stat1Label:"Yuxu Simvolu",
+          stat2Label:"Quran Səhifəsi",
+          stat3Label:"Hərf Yozumu",
+          footerPrivacy:"Məxfilik Siyasəti",
+          footerSupport:"Dəstək",
+          footerContact:"Əlaqə",
+          footerCopyright:"© 2026 İstixarə App. Bütün hüquqlar qorunur."
+        },
+        en:{
+          __title:"Istikhara – Quran Istikhara and Dream Interpretation",
+          heroTitle:"Istikhara",
+          heroDesc:"A guide to performing Istikhara with the Holy Quran and a dream interpretation app based on Islamic sources.",
+          feat1Title:"Quran Istikhara",
+          feat1Desc:"The traditional Istikhara method with the Quran. Guided Istikhara through the steps of opening a page, counting the word Allah, and finding the letter.",
+          feat2Title:"Dream Interpretation",
+          feat2Desc:"An Islamic dream interpretation database with 2086 symbols. AI-assisted interpretation based on the sources of Ibn Sirin.",
+          feat3Title:"Sleep for Istikhara",
+          feat3Desc:"Istikhara tracking for up to 7 nights. A comprehensive Istikhara experience with dream logging and tracking of emotions and peace of mind.",
+          stat1Label:"Dream Symbols",
+          stat2Label:"Quran Pages",
+          stat3Label:"Letter Readings",
+          footerPrivacy:"Privacy Policy",
+          footerSupport:"Support",
+          footerContact:"Contact",
+          footerCopyright:"© 2026 İstihare App. All rights reserved."
+        },
+        ar:{
+          __title:"الاستخارة – استخارة القرآن وتفسير الأحلام",
+          heroTitle:"الاستخارة",
+          heroDesc:"دليل لأداء الاستخارة بالقرآن الكريم وتطبيق لتفسير الأحلام يستند إلى المصادر الإسلامية.",
+          feat1Title:"استخارة القرآن",
+          feat1Desc:"طريقة الاستخارة التقليدية بالقرآن. استخارة موجَّهة عبر خطوات فتح الصفحة وعدّ لفظ الجلالة (الله) وإيجاد الحرف.",
+          feat2Title:"تفسير الأحلام",
+          feat2Desc:"قاعدة بيانات إسلامية لتفسير الأحلام تضم 2086 رمزًا. تفسير مدعوم بالذكاء الاصطناعي يستند إلى مصادر ابن سيرين.",
+          feat3Title:"النوم للاستخارة",
+          feat3Desc:"متابعة الاستخارة لمدة تصل إلى 7 ليالٍ. تجربة استخارة شاملة مع تدوين الأحلام ومتابعة المشاعر ومستوى الطمأنينة.",
+          stat1Label:"رمز حلم",
+          stat2Label:"صفحة قرآن",
+          stat3Label:"تأويل حرف",
+          footerPrivacy:"سياسة الخصوصية",
+          footerSupport:"الدعم",
+          footerContact:"تواصل",
+          footerCopyright:"© 2026 İstihare App. جميع الحقوق محفوظة."
+        }
+      };
+      function detect(){try{var s=localStorage.getItem("siteLang");if(s&&SUP.indexOf(s)>=0)return s;}catch(e){}
+        var ls=[navigator.language].concat(navigator.languages||[]);
+        for(var i=0;i<ls.length;i++){var b=(ls[i]||"").toLowerCase().split("-")[0];if(SUP.indexOf(b)>=0)return b;}return "en";}
+      function apply(lang){
+        var d=T[lang]||T.en;
+        document.documentElement.lang=lang;
+        document.documentElement.dir=(lang==="ar")?"rtl":"ltr";
+        if(d.__title)document.title=d.__title;
+        document.querySelectorAll("[data-i18n]").forEach(function(el){var k=el.getAttribute("data-i18n");if(d[k]!=null)el.textContent=d[k];});
+        document.querySelectorAll("[data-i18n-html]").forEach(function(el){var k=el.getAttribute("data-i18n-html");if(d[k]!=null)el.innerHTML=d[k];});
+        document.querySelectorAll("#langSwitch button").forEach(function(b){b.style.opacity=(b.getAttribute("data-l")===lang)?"1":"0.45";});
+      }
+      function setLang(l){try{localStorage.setItem("siteLang",l);}catch(e){}apply(l);}
+      var sw=document.getElementById("langSwitch"),lab={tr:"TR",az:"AZ",en:"EN",ar:"ع"};
+      SUP.forEach(function(l){var b=document.createElement("button");b.textContent=lab[l];b.setAttribute("data-l",l);
+        b.style.cssText="background:none;border:none;color:#D4AF37;font-size:13px;font-weight:700;cursor:pointer;padding:4px 9px;border-radius:999px;line-height:1;";
+        b.onclick=function(){setLang(l);};sw.appendChild(b);});
+      apply(detect());
+    })();
+    </script>
 </body>
 </html>

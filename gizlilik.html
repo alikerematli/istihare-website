@@ -41,109 +41,392 @@
 <body>
     <div class="bg-pattern"></div>
     <div class="container">
-        <a href="index.html" class="back">← Ana Sayfa</a>
-        
-        <h1>Gizlilik Politikası</h1>
-        <p class="date">Son güncellenme: 24 Mart 2026</p>
+        <a href="index.html" class="back" data-i18n="back">← Ana Sayfa</a>
 
-        <p>İstihare uygulaması ("Uygulama") olarak, kullanıcılarımızın gizliliğini korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken kişisel bilgilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+        <h1 data-i18n="h1">Gizlilik Politikası</h1>
+        <p class="date" data-i18n="date">Son güncellenme: 24 Mart 2026</p>
 
-        <h2>1. Toplanan Veriler</h2>
-        
+        <p data-i18n="intro">İstihare uygulaması ("Uygulama") olarak, kullanıcılarımızın gizliliğini korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken kişisel bilgilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+
+        <h2 data-i18n="s1_h">1. Toplanan Veriler</h2>
+
         <div class="highlight">
-            <p><strong>İstihare uygulaması kişisel veri toplamaz ve sunucularda saklamaz.</strong></p>
+            <p data-i18n-html="s1_hl"><strong>İstihare uygulaması kişisel veri toplamaz ve sunucularda saklamaz.</strong></p>
         </div>
 
-        <p>Uygulama aşağıdaki verileri yalnızca <strong>cihazınızda (yerel depolama)</strong> saklar:</p>
+        <p data-i18n-html="s1_p1">Uygulama aşağıdaki verileri yalnızca <strong>cihazınızda (yerel depolama)</strong> saklar:</p>
         <ul>
-            <li>İstihare kayıtları ve geçmişi</li>
-            <li>Rüya tabiri geçmişi</li>
-            <li>Kullanıcı tercihleri</li>
+            <li data-i18n="s1_li1">İstihare kayıtları ve geçmişi</li>
+            <li data-i18n="s1_li2">Rüya tabiri geçmişi</li>
+            <li data-i18n="s1_li3">Kullanıcı tercihleri</li>
         </ul>
-        <p>Bu veriler sunucularımıza gönderilmez ve yalnızca sizin cihazınızda tutulur.</p>
+        <p data-i18n="s1_p2">Bu veriler sunucularımıza gönderilmez ve yalnızca sizin cihazınızda tutulur.</p>
 
-        <h2>2. Rüya Tabiri Hizmeti ve Üçüncü Taraf AI Kullanımı</h2>
-        
+        <h2 data-i18n="s2_h">2. Rüya Tabiri Hizmeti ve Üçüncü Taraf AI Kullanımı</h2>
+
         <div class="highlight">
-            <p><strong>Rüya tabiri özelliği, kullanıcı verilerini üçüncü taraf bir yapay zeka servisi olan OpenAI, Inc. (San Francisco, ABD) sunucularına göndererek işler.</strong></p>
+            <p data-i18n-html="s2_hl"><strong>Rüya tabiri özelliği, kullanıcı verilerini üçüncü taraf bir yapay zeka servisi olan OpenAI, Inc. (San Francisco, ABD) sunucularına göndererek işler.</strong></p>
         </div>
 
-        <p><strong>Üçüncü taraf servis bilgileri:</strong></p>
+        <p data-i18n-html="s2_p1"><strong>Üçüncü taraf servis bilgileri:</strong></p>
         <ul>
-            <li><strong>Servis sağlayıcı:</strong> OpenAI, Inc.</li>
-            <li><strong>Kullanılan model:</strong> GPT (dil modeli)</li>
-            <li><strong>Konum:</strong> Amerika Birleşik Devletleri</li>
-            <li><strong>Gizlilik politikası:</strong> <a href="https://openai.com/policies/privacy-policy" target="_blank" style="color: #D4AF37;">OpenAI Gizlilik Politikası</a></li>
+            <li data-i18n-html="s2_li1"><strong>Servis sağlayıcı:</strong> OpenAI, Inc.</li>
+            <li data-i18n-html="s2_li2"><strong>Kullanılan model:</strong> GPT (dil modeli)</li>
+            <li data-i18n-html="s2_li3"><strong>Konum:</strong> Amerika Birleşik Devletleri</li>
+            <li data-i18n-html="s2_li4"><strong>Gizlilik politikası:</strong> <a href="https://openai.com/policies/privacy-policy" target="_blank" style="color: #D4AF37;">OpenAI Gizlilik Politikası</a></li>
         </ul>
 
-        <p><strong>Gönderilen veri:</strong></p>
+        <p data-i18n-html="s2_p2"><strong>Gönderilen veri:</strong></p>
         <ul>
-            <li>Kullanıcının girdiği rüya metni (maksimum 2000 karakter)</li>
-            <li>Varsa seçilen duygu durumu</li>
-            <li>Varsa istihare niyeti</li>
-        </ul>
-        
-        <p><strong>Kesinlikle gönderilmeyen veri:</strong></p>
-        <ul>
-            <li>İsim, e-posta, telefon numarası gibi kişisel bilgiler</li>
-            <li>Apple Kimliği veya hesap bilgileri</li>
-            <li>Cihaz kimlik bilgileri (IDFA, IDFV vb.)</li>
-            <li>Konum verileri</li>
-            <li>Diğer uygulama kullanım verileri</li>
+            <li data-i18n="s2_li5">Kullanıcının girdiği rüya metni (maksimum 2000 karakter)</li>
+            <li data-i18n="s2_li6">Varsa seçilen duygu durumu</li>
+            <li data-i18n="s2_li7">Varsa istihare niyeti</li>
         </ul>
 
-        <p><strong>Veri işleme ve saklama:</strong></p>
+        <p data-i18n-html="s2_p3"><strong>Kesinlikle gönderilmeyen veri:</strong></p>
         <ul>
-            <li>Rüya metni yalnızca yorum oluşturmak amacıyla tek seferlik olarak işlenir</li>
-            <li>Uygulamamız gönderilen verileri kendi sunucularında saklamaz</li>
-            <li>OpenAI'nin veri saklama politikası kendi gizlilik politikasında belirtilmiştir</li>
-            <li>Veriler HTTPS (TLS 1.2+) şifrelemesi ile güvenli şekilde iletilir</li>
-            <li>Gönderilen metinler HTML etiketlerinden ve zararlı içeriklerden temizlenir</li>
+            <li data-i18n="s2_li8">İsim, e-posta, telefon numarası gibi kişisel bilgiler</li>
+            <li data-i18n="s2_li9">Apple Kimliği veya hesap bilgileri</li>
+            <li data-i18n="s2_li10">Cihaz kimlik bilgileri (IDFA, IDFV vb.)</li>
+            <li data-i18n="s2_li11">Konum verileri</li>
+            <li data-i18n="s2_li12">Diğer uygulama kullanım verileri</li>
         </ul>
 
-        <h2>3. Kullanıcı İzni ve Onay</h2>
+        <p data-i18n-html="s2_p4"><strong>Veri işleme ve saklama:</strong></p>
+        <ul>
+            <li data-i18n="s2_li13">Rüya metni yalnızca yorum oluşturmak amacıyla tek seferlik olarak işlenir</li>
+            <li data-i18n="s2_li14">Uygulamamız gönderilen verileri kendi sunucularında saklamaz</li>
+            <li data-i18n="s2_li15">OpenAI'nin veri saklama politikası kendi gizlilik politikasında belirtilmiştir</li>
+            <li data-i18n="s2_li16">Veriler HTTPS (TLS 1.2+) şifrelemesi ile güvenli şekilde iletilir</li>
+            <li data-i18n="s2_li17">Gönderilen metinler HTML etiketlerinden ve zararlı içeriklerden temizlenir</li>
+        </ul>
+
+        <h2 data-i18n="s3_h">3. Kullanıcı İzni ve Onay</h2>
         <div class="highlight">
-            <p><strong>Rüya tabiri özelliği kullanılmadan önce, uygulama kullanıcıdan açık izin (onay) ister.</strong></p>
+            <p data-i18n-html="s3_hl"><strong>Rüya tabiri özelliği kullanılmadan önce, uygulama kullanıcıdan açık izin (onay) ister.</strong></p>
         </div>
-        <p>İlk kez rüya tabiri yapmak istediğinizde:</p>
+        <p data-i18n="s3_p1">İlk kez rüya tabiri yapmak istediğinizde:</p>
         <ul>
-            <li>Hangi verilerin gönderileceği açıkça bildirilir</li>
-            <li>Verilerin nereye (OpenAI sunucuları) gönderileceği belirtilir</li>
-            <li>Kullanıcı "Kabul Et ve Devam Et" butonuna basmadan veri gönderimi yapılmaz</li>
-            <li>"İptal" seçeneği ile veri paylaşımını reddedebilirsiniz</li>
+            <li data-i18n="s3_li1">Hangi verilerin gönderileceği açıkça bildirilir</li>
+            <li data-i18n="s3_li2">Verilerin nereye (OpenAI sunucuları) gönderileceği belirtilir</li>
+            <li data-i18n="s3_li3">Kullanıcı "Kabul Et ve Devam Et" butonuna basmadan veri gönderimi yapılmaz</li>
+            <li data-i18n="s3_li4">"İptal" seçeneği ile veri paylaşımını reddedebilirsiniz</li>
         </ul>
-        <p>İzninizi verdikten sonra bu tercih cihazınızda saklanır. Uygulamayı silip yeniden yüklediğinizde izin tekrar sorulur.</p>
+        <p data-i18n="s3_p2">İzninizi verdikten sonra bu tercih cihazınızda saklanır. Uygulamayı silip yeniden yüklediğinizde izin tekrar sorulur.</p>
 
-        <h2>4. Reklamlar</h2>
-        <p>Uygulamamızda Google AdMob reklam hizmeti kullanılmaktadır. AdMob, kişiselleştirilmemiş (non-personalized) reklamlar gösterir. AdMob'un kendi gizlilik politikası için <a href="https://policies.google.com/privacy" target="_blank" style="color: #D4AF37;">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
-        
-        <p>Uygulamamız iOS'ta Apple'ın Uygulama Takip Şeffaflığı (ATT) çerçevesini kullanır. Reklam takibi için izninizi ister; izin vermemeniz durumunda hiçbir takip yapılmaz.</p>
+        <h2 data-i18n="s4_h">4. Reklamlar</h2>
+        <p data-i18n-html="s4_p1">Uygulamamızda Google AdMob reklam hizmeti kullanılmaktadır. AdMob, kişiselleştirilmemiş (non-personalized) reklamlar gösterir. AdMob'un kendi gizlilik politikası için <a href="https://policies.google.com/privacy" target="_blank" style="color: #D4AF37;">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
 
-        <h2>5. Üçüncü Taraf Hizmetleri</h2>
-        <p>Uygulamamız aşağıdaki üçüncü taraf hizmetlerini kullanmaktadır:</p>
+        <p data-i18n="s4_p2">Uygulamamız iOS'ta Apple'ın Uygulama Takip Şeffaflığı (ATT) çerçevesini kullanır. Reklam takibi için izninizi ister; izin vermemeniz durumunda hiçbir takip yapılmaz.</p>
+
+        <h2 data-i18n="s5_h">5. Üçüncü Taraf Hizmetleri</h2>
+        <p data-i18n="s5_p1">Uygulamamız aşağıdaki üçüncü taraf hizmetlerini kullanmaktadır:</p>
         <ul>
-            <li><strong>Google AdMob</strong> — Reklam gösterimi — <a href="https://policies.google.com/privacy" target="_blank" style="color: #D4AF37;">Gizlilik Politikası</a></li>
-            <li><strong>OpenAI, Inc.</strong> — Rüya tabiri yapay zeka yorumlama — <a href="https://openai.com/policies/privacy-policy" target="_blank" style="color: #D4AF37;">Gizlilik Politikası</a></li>
+            <li data-i18n-html="s5_li1"><strong>Google AdMob</strong> — Reklam gösterimi — <a href="https://policies.google.com/privacy" target="_blank" style="color: #D4AF37;">Gizlilik Politikası</a></li>
+            <li data-i18n-html="s5_li2"><strong>OpenAI, Inc.</strong> — Rüya tabiri yapay zeka yorumlama — <a href="https://openai.com/policies/privacy-policy" target="_blank" style="color: #D4AF37;">Gizlilik Politikası</a></li>
         </ul>
-        <p>Bu hizmetlerin kendi gizlilik politikaları geçerlidir. Kullanıcı verilerinin bu hizmetlerle paylaşımı, yukarıdaki bölümlerde detaylı olarak açıklanmıştır.</p>
+        <p data-i18n="s5_p2">Bu hizmetlerin kendi gizlilik politikaları geçerlidir. Kullanıcı verilerinin bu hizmetlerle paylaşımı, yukarıdaki bölümlerde detaylı olarak açıklanmıştır.</p>
 
-        <h2>6. Çocukların Gizliliği</h2>
-        <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel bilgi toplamaz.</p>
+        <h2 data-i18n="s6_h">6. Çocukların Gizliliği</h2>
+        <p data-i18n="s6_p1">Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel bilgi toplamaz.</p>
 
-        <h2>7. Veri Güvenliği</h2>
-        <p>Tüm kullanıcı verileri cihazınızda yerel olarak saklanır. Rüya metinleri HTTPS şifrelemesi ile güvenli bir şekilde iletilir. Kullanıcı girdileri zararlı içeriklerden (HTML enjeksiyonu vb.) arındırılır.</p>
+        <h2 data-i18n="s7_h">7. Veri Güvenliği</h2>
+        <p data-i18n="s7_p1">Tüm kullanıcı verileri cihazınızda yerel olarak saklanır. Rüya metinleri HTTPS şifrelemesi ile güvenli bir şekilde iletilir. Kullanıcı girdileri zararlı içeriklerden (HTML enjeksiyonu vb.) arındırılır.</p>
 
-        <h2>8. Değişiklikler</h2>
-        <p>Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içi bildirimlerle duyurulacaktır.</p>
+        <h2 data-i18n="s8_h">8. Değişiklikler</h2>
+        <p data-i18n="s8_p1">Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içi bildirimlerle duyurulacaktır.</p>
 
-        <h2>9. İletişim</h2>
-        <p>Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:</p>
-        <p>📧 <a href="mailto:istiharaapp@gmail.com" style="color: #D4AF37;">istiharaapp@gmail.com</a></p>
+        <h2 data-i18n="s9_h">9. İletişim</h2>
+        <p data-i18n="s9_p1">Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:</p>
+        <p data-i18n-html="s9_p2">📧 <a href="mailto:istiharaapp@gmail.com" style="color: #D4AF37;">istiharaapp@gmail.com</a></p>
 
         <div class="footer">
-            <p>© 2026 İstihare App. Tüm hakları saklıdır.</p>
-            <p style="margin-top: 8px;"><a href="index.html">Ana Sayfa</a> · <a href="destek.html">Destek</a></p>
+            <p data-i18n="footer_copy">© 2026 İstihare App. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 8px;" data-i18n-html="footer_links"><a href="index.html">Ana Sayfa</a> · <a href="destek.html">Destek</a></p>
         </div>
     </div>
+
+<div id="langSwitch" style="position:fixed;top:14px;right:14px;z-index:9999;display:flex;gap:2px;background:rgba(20,30,20,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(212,175,55,.3);border-radius:999px;padding:4px;"></div>
+<script>
+(function(){
+  var SUP=["tr","az","en","ar"];
+  var T={
+    tr:{
+      __title:"Gizlilik Politikası – İstihare App",
+      back:"← Ana Sayfa",
+      h1:"Gizlilik Politikası",
+      date:"Son güncellenme: 24 Mart 2026",
+      intro:"İstihare uygulaması (\"Uygulama\") olarak, kullanıcılarımızın gizliliğini korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken kişisel bilgilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.",
+      s1_h:"1. Toplanan Veriler",
+      s1_hl:"<strong>İstihare uygulaması kişisel veri toplamaz ve sunucularda saklamaz.</strong>",
+      s1_p1:"Uygulama aşağıdaki verileri yalnızca <strong>cihazınızda (yerel depolama)</strong> saklar:",
+      s1_li1:"İstihare kayıtları ve geçmişi",
+      s1_li2:"Rüya tabiri geçmişi",
+      s1_li3:"Kullanıcı tercihleri",
+      s1_p2:"Bu veriler sunucularımıza gönderilmez ve yalnızca sizin cihazınızda tutulur.",
+      s2_h:"2. Rüya Tabiri Hizmeti ve Üçüncü Taraf AI Kullanımı",
+      s2_hl:"<strong>Rüya tabiri özelliği, kullanıcı verilerini üçüncü taraf bir yapay zeka servisi olan OpenAI, Inc. (San Francisco, ABD) sunucularına göndererek işler.</strong>",
+      s2_p1:"<strong>Üçüncü taraf servis bilgileri:</strong>",
+      s2_li1:"<strong>Servis sağlayıcı:</strong> OpenAI, Inc.",
+      s2_li2:"<strong>Kullanılan model:</strong> GPT (dil modeli)",
+      s2_li3:"<strong>Konum:</strong> Amerika Birleşik Devletleri",
+      s2_li4:"<strong>Gizlilik politikası:</strong> <a href=\"https://openai.com/policies/privacy-policy\" target=\"_blank\" style=\"color: #D4AF37;\">OpenAI Gizlilik Politikası</a>",
+      s2_p2:"<strong>Gönderilen veri:</strong>",
+      s2_li5:"Kullanıcının girdiği rüya metni (maksimum 2000 karakter)",
+      s2_li6:"Varsa seçilen duygu durumu",
+      s2_li7:"Varsa istihare niyeti",
+      s2_p3:"<strong>Kesinlikle gönderilmeyen veri:</strong>",
+      s2_li8:"İsim, e-posta, telefon numarası gibi kişisel bilgiler",
+      s2_li9:"Apple Kimliği veya hesap bilgileri",
+      s2_li10:"Cihaz kimlik bilgileri (IDFA, IDFV vb.)",
+      s2_li11:"Konum verileri",
+      s2_li12:"Diğer uygulama kullanım verileri",
+      s2_p4:"<strong>Veri işleme ve saklama:</strong>",
+      s2_li13:"Rüya metni yalnızca yorum oluşturmak amacıyla tek seferlik olarak işlenir",
+      s2_li14:"Uygulamamız gönderilen verileri kendi sunucularında saklamaz",
+      s2_li15:"OpenAI'nin veri saklama politikası kendi gizlilik politikasında belirtilmiştir",
+      s2_li16:"Veriler HTTPS (TLS 1.2+) şifrelemesi ile güvenli şekilde iletilir",
+      s2_li17:"Gönderilen metinler HTML etiketlerinden ve zararlı içeriklerden temizlenir",
+      s3_h:"3. Kullanıcı İzni ve Onay",
+      s3_hl:"<strong>Rüya tabiri özelliği kullanılmadan önce, uygulama kullanıcıdan açık izin (onay) ister.</strong>",
+      s3_p1:"İlk kez rüya tabiri yapmak istediğinizde:",
+      s3_li1:"Hangi verilerin gönderileceği açıkça bildirilir",
+      s3_li2:"Verilerin nereye (OpenAI sunucuları) gönderileceği belirtilir",
+      s3_li3:"Kullanıcı \"Kabul Et ve Devam Et\" butonuna basmadan veri gönderimi yapılmaz",
+      s3_li4:"\"İptal\" seçeneği ile veri paylaşımını reddedebilirsiniz",
+      s3_p2:"İzninizi verdikten sonra bu tercih cihazınızda saklanır. Uygulamayı silip yeniden yüklediğinizde izin tekrar sorulur.",
+      s4_h:"4. Reklamlar",
+      s4_p1:"Uygulamamızda Google AdMob reklam hizmeti kullanılmaktadır. AdMob, kişiselleştirilmemiş (non-personalized) reklamlar gösterir. AdMob'un kendi gizlilik politikası için <a href=\"https://policies.google.com/privacy\" target=\"_blank\" style=\"color: #D4AF37;\">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.",
+      s4_p2:"Uygulamamız iOS'ta Apple'ın Uygulama Takip Şeffaflığı (ATT) çerçevesini kullanır. Reklam takibi için izninizi ister; izin vermemeniz durumunda hiçbir takip yapılmaz.",
+      s5_h:"5. Üçüncü Taraf Hizmetleri",
+      s5_p1:"Uygulamamız aşağıdaki üçüncü taraf hizmetlerini kullanmaktadır:",
+      s5_li1:"<strong>Google AdMob</strong> — Reklam gösterimi — <a href=\"https://policies.google.com/privacy\" target=\"_blank\" style=\"color: #D4AF37;\">Gizlilik Politikası</a>",
+      s5_li2:"<strong>OpenAI, Inc.</strong> — Rüya tabiri yapay zeka yorumlama — <a href=\"https://openai.com/policies/privacy-policy\" target=\"_blank\" style=\"color: #D4AF37;\">Gizlilik Politikası</a>",
+      s5_p2:"Bu hizmetlerin kendi gizlilik politikaları geçerlidir. Kullanıcı verilerinin bu hizmetlerle paylaşımı, yukarıdaki bölümlerde detaylı olarak açıklanmıştır.",
+      s6_h:"6. Çocukların Gizliliği",
+      s6_p1:"Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel bilgi toplamaz.",
+      s7_h:"7. Veri Güvenliği",
+      s7_p1:"Tüm kullanıcı verileri cihazınızda yerel olarak saklanır. Rüya metinleri HTTPS şifrelemesi ile güvenli bir şekilde iletilir. Kullanıcı girdileri zararlı içeriklerden (HTML enjeksiyonu vb.) arındırılır.",
+      s8_h:"8. Değişiklikler",
+      s8_p1:"Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içi bildirimlerle duyurulacaktır.",
+      s9_h:"9. İletişim",
+      s9_p1:"Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:",
+      s9_p2:"📧 <a href=\"mailto:istiharaapp@gmail.com\" style=\"color: #D4AF37;\">istiharaapp@gmail.com</a>",
+      footer_copy:"© 2026 İstihare App. Tüm hakları saklıdır.",
+      footer_links:"<a href=\"index.html\">Ana Sayfa</a> · <a href=\"destek.html\">Destek</a>"
+    },
+    az:{
+      __title:"Məxfilik Siyasəti – İstihare App",
+      back:"← Ana Səhifə",
+      h1:"Məxfilik Siyasəti",
+      date:"Son yenilənmə: 24 Mart 2026",
+      intro:"İstihare tətbiqi (\"Tətbiq\") olaraq, istifadəçilərimizin məxfiliyini qorumağı öhdəmizə götürürük. Bu Məxfilik Siyasəti, tətbiqimizdən istifadə edərkən şəxsi məlumatlarınızın necə toplandığını, istifadə edildiyini və qorunduğunu izah edir.",
+      s1_h:"1. Toplanan Məlumatlar",
+      s1_hl:"<strong>İstihare tətbiqi şəxsi məlumat toplamır və serverlərdə saxlamır.</strong>",
+      s1_p1:"Tətbiq aşağıdakı məlumatları yalnız <strong>cihazınızda (yerli yaddaşda)</strong> saxlayır:",
+      s1_li1:"İstixarə qeydləri və tarixçəsi",
+      s1_li2:"Yuxu yozumu tarixçəsi",
+      s1_li3:"İstifadəçi seçimləri",
+      s1_p2:"Bu məlumatlar serverlərimizə göndərilmir və yalnız sizin cihazınızda saxlanılır.",
+      s2_h:"2. Yuxu Yozumu Xidməti və Üçüncü Tərəf Süni İntellekt İstifadəsi",
+      s2_hl:"<strong>Yuxu yozumu funksiyası istifadəçi məlumatlarını üçüncü tərəf süni intellekt xidməti olan OpenAI, Inc. (San Francisco, ABŞ) serverlərinə göndərərək emal edir.</strong>",
+      s2_p1:"<strong>Üçüncü tərəf xidmət məlumatları:</strong>",
+      s2_li1:"<strong>Xidmət təminatçısı:</strong> OpenAI, Inc.",
+      s2_li2:"<strong>İstifadə olunan model:</strong> GPT (dil modeli)",
+      s2_li3:"<strong>Yerləşmə:</strong> Amerika Birləşmiş Ştatları",
+      s2_li4:"<strong>Məxfilik siyasəti:</strong> <a href=\"https://openai.com/policies/privacy-policy\" target=\"_blank\" style=\"color: #D4AF37;\">OpenAI Məxfilik Siyasəti</a>",
+      s2_p2:"<strong>Göndərilən məlumat:</strong>",
+      s2_li5:"İstifadəçinin daxil etdiyi yuxu mətni (maksimum 2000 simvol)",
+      s2_li6:"Varsa, seçilmiş əhval-ruhiyyə",
+      s2_li7:"Varsa, istixarə niyyəti",
+      s2_p3:"<strong>Qətiyyən göndərilməyən məlumat:</strong>",
+      s2_li8:"Ad, e-poçt, telefon nömrəsi kimi şəxsi məlumatlar",
+      s2_li9:"Apple ID və ya hesab məlumatları",
+      s2_li10:"Cihaz kimlik məlumatları (IDFA, IDFV və s.)",
+      s2_li11:"Məkan məlumatları",
+      s2_li12:"Digər tətbiq istifadə məlumatları",
+      s2_p4:"<strong>Məlumatın emalı və saxlanması:</strong>",
+      s2_li13:"Yuxu mətni yalnız yozum yaratmaq məqsədilə birdəfəlik emal edilir",
+      s2_li14:"Tətbiqimiz göndərilən məlumatları öz serverlərində saxlamır",
+      s2_li15:"OpenAI-nin məlumat saxlama siyasəti öz məxfilik siyasətində göstərilmişdir",
+      s2_li16:"Məlumatlar HTTPS (TLS 1.2+) şifrələməsi ilə təhlükəsiz şəkildə ötürülür",
+      s2_li17:"Göndərilən mətnlər HTML etiketlərindən və zərərli məzmundan təmizlənir",
+      s3_h:"3. İstifadəçi İcazəsi və Razılığı",
+      s3_hl:"<strong>Yuxu yozumu funksiyası istifadə edilməzdən əvvəl, tətbiq istifadəçidən açıq icazə (razılıq) istəyir.</strong>",
+      s3_p1:"İlk dəfə yuxu yozumu etmək istədiyinizdə:",
+      s3_li1:"Hansı məlumatların göndəriləcəyi açıq şəkildə bildirilir",
+      s3_li2:"Məlumatların hara (OpenAI serverlərinə) göndəriləcəyi qeyd edilir",
+      s3_li3:"İstifadəçi \"Qəbul et və Davam et\" düyməsinə basmadan məlumat göndərilmir",
+      s3_li4:"\"Ləğv et\" seçimi ilə məlumat paylaşımını rədd edə bilərsiniz",
+      s3_p2:"İcazənizi verdikdən sonra bu seçim cihazınızda saxlanılır. Tətbiqi silib yenidən yüklədikdə icazə yenidən soruşulur.",
+      s4_h:"4. Reklamlar",
+      s4_p1:"Tətbiqimizdə Google AdMob reklam xidməti istifadə olunur. AdMob fərdiləşdirilməmiş (non-personalized) reklamlar göstərir. AdMob-un öz məxfilik siyasəti üçün <a href=\"https://policies.google.com/privacy\" target=\"_blank\" style=\"color: #D4AF37;\">Google Məxfilik Siyasəti</a>-ni nəzərdən keçirə bilərsiniz.",
+      s4_p2:"Tətbiqimiz iOS-da Apple-ın Tətbiq İzləmə Şəffaflığı (ATT) çərçivəsini istifadə edir. Reklam izləməsi üçün icazənizi istəyir; icazə verməsəniz heç bir izləmə aparılmır.",
+      s5_h:"5. Üçüncü Tərəf Xidmətləri",
+      s5_p1:"Tətbiqimiz aşağıdakı üçüncü tərəf xidmətlərindən istifadə edir:",
+      s5_li1:"<strong>Google AdMob</strong> — Reklam göstərimi — <a href=\"https://policies.google.com/privacy\" target=\"_blank\" style=\"color: #D4AF37;\">Məxfilik Siyasəti</a>",
+      s5_li2:"<strong>OpenAI, Inc.</strong> — Yuxu yozumu süni intellekt şərhi — <a href=\"https://openai.com/policies/privacy-policy\" target=\"_blank\" style=\"color: #D4AF37;\">Məxfilik Siyasəti</a>",
+      s5_p2:"Bu xidmətlərin öz məxfilik siyasətləri tətbiq olunur. İstifadəçi məlumatlarının bu xidmətlərlə paylaşılması yuxarıdakı bölmələrdə ətraflı şəkildə izah edilmişdir.",
+      s6_h:"6. Uşaqların Məxfiliyi",
+      s6_p1:"Tətbiqimiz 13 yaşdan kiçik uşaqlara yönəlmir və bilərəkdən uşaqlardan şəxsi məlumat toplamır.",
+      s7_h:"7. Məlumat Təhlükəsizliyi",
+      s7_p1:"Bütün istifadəçi məlumatları cihazınızda yerli olaraq saxlanılır. Yuxu mətnləri HTTPS şifrələməsi ilə təhlükəsiz şəkildə ötürülür. İstifadəçi girişləri zərərli məzmundan (HTML inyeksiyası və s.) təmizlənir.",
+      s8_h:"8. Dəyişikliklər",
+      s8_p1:"Bu Məxfilik Siyasəti zaman-zaman yenilənə bilər. Mühüm dəyişikliklər tətbiqdaxili bildirişlərlə elan ediləcəkdir.",
+      s9_h:"9. Əlaqə",
+      s9_p1:"Məxfilik siyasətimiz haqqında suallarınız üçün bizimlə əlaqə saxlaya bilərsiniz:",
+      s9_p2:"📧 <a href=\"mailto:istiharaapp@gmail.com\" style=\"color: #D4AF37;\">istiharaapp@gmail.com</a>",
+      footer_copy:"© 2026 İstihare App. Bütün hüquqlar qorunur.",
+      footer_links:"<a href=\"index.html\">Ana Səhifə</a> · <a href=\"destek.html\">Dəstək</a>"
+    },
+    en:{
+      __title:"Privacy Policy – İstihare App",
+      back:"← Home",
+      h1:"Privacy Policy",
+      date:"Last updated: March 24, 2026",
+      intro:"As the İstihare application (\"App\"), we are committed to protecting the privacy of our users. This Privacy Policy explains how your personal information is collected, used, and protected when you use our app.",
+      s1_h:"1. Data Collected",
+      s1_hl:"<strong>The İstihare app does not collect personal data or store it on servers.</strong>",
+      s1_p1:"The app stores the following data only <strong>on your device (local storage)</strong>:",
+      s1_li1:"Istikhara records and history",
+      s1_li2:"Dream interpretation history",
+      s1_li3:"User preferences",
+      s1_p2:"This data is not sent to our servers and is kept only on your device.",
+      s2_h:"2. Dream Interpretation Service and Third-Party AI Use",
+      s2_hl:"<strong>The dream interpretation feature processes user data by sending it to the servers of OpenAI, Inc. (San Francisco, USA), a third-party artificial intelligence service.</strong>",
+      s2_p1:"<strong>Third-party service details:</strong>",
+      s2_li1:"<strong>Service provider:</strong> OpenAI, Inc.",
+      s2_li2:"<strong>Model used:</strong> GPT (language model)",
+      s2_li3:"<strong>Location:</strong> United States of America",
+      s2_li4:"<strong>Privacy policy:</strong> <a href=\"https://openai.com/policies/privacy-policy\" target=\"_blank\" style=\"color: #D4AF37;\">OpenAI Privacy Policy</a>",
+      s2_p2:"<strong>Data sent:</strong>",
+      s2_li5:"The dream text entered by the user (maximum 2000 characters)",
+      s2_li6:"The selected mood, if any",
+      s2_li7:"The istikhara intention, if any",
+      s2_p3:"<strong>Data that is never sent:</strong>",
+      s2_li8:"Personal information such as name, email, or phone number",
+      s2_li9:"Apple ID or account information",
+      s2_li10:"Device identifiers (IDFA, IDFV, etc.)",
+      s2_li11:"Location data",
+      s2_li12:"Other app usage data",
+      s2_p4:"<strong>Data processing and storage:</strong>",
+      s2_li13:"The dream text is processed only once, solely for the purpose of generating an interpretation",
+      s2_li14:"Our app does not store the data sent on its own servers",
+      s2_li15:"OpenAI's data retention policy is stated in its own privacy policy",
+      s2_li16:"Data is transmitted securely using HTTPS (TLS 1.2+) encryption",
+      s2_li17:"Submitted texts are cleaned of HTML tags and malicious content",
+      s3_h:"3. User Permission and Consent",
+      s3_hl:"<strong>Before the dream interpretation feature is used, the app asks the user for explicit permission (consent).</strong>",
+      s3_p1:"The first time you want to interpret a dream:",
+      s3_li1:"Which data will be sent is clearly disclosed",
+      s3_li2:"Where the data will be sent (OpenAI servers) is specified",
+      s3_li3:"No data is sent until the user presses the \"Accept and Continue\" button",
+      s3_li4:"You can refuse to share data using the \"Cancel\" option",
+      s3_p2:"After you grant your permission, this choice is stored on your device. If you delete and reinstall the app, permission is requested again.",
+      s4_h:"4. Advertisements",
+      s4_p1:"Our app uses the Google AdMob advertising service. AdMob displays non-personalized ads. You can review AdMob's own privacy policy in the <a href=\"https://policies.google.com/privacy\" target=\"_blank\" style=\"color: #D4AF37;\">Google Privacy Policy</a>.",
+      s4_p2:"On iOS, our app uses Apple's App Tracking Transparency (ATT) framework. It asks for your permission for ad tracking; if you do not grant permission, no tracking is performed.",
+      s5_h:"5. Third-Party Services",
+      s5_p1:"Our app uses the following third-party services:",
+      s5_li1:"<strong>Google AdMob</strong> — Ad display — <a href=\"https://policies.google.com/privacy\" target=\"_blank\" style=\"color: #D4AF37;\">Privacy Policy</a>",
+      s5_li2:"<strong>OpenAI, Inc.</strong> — AI dream interpretation — <a href=\"https://openai.com/policies/privacy-policy\" target=\"_blank\" style=\"color: #D4AF37;\">Privacy Policy</a>",
+      s5_p2:"These services' own privacy policies apply. The sharing of user data with these services is explained in detail in the sections above.",
+      s6_h:"6. Children's Privacy",
+      s6_p1:"Our app is not intended for children under the age of 13 and does not knowingly collect personal information from children.",
+      s7_h:"7. Data Security",
+      s7_p1:"All user data is stored locally on your device. Dream texts are transmitted securely using HTTPS encryption. User inputs are sanitized of malicious content (HTML injection, etc.).",
+      s8_h:"8. Changes",
+      s8_p1:"This Privacy Policy may be updated from time to time. Significant changes will be announced through in-app notifications.",
+      s9_h:"9. Contact",
+      s9_p1:"For questions about our privacy policy, you can contact us:",
+      s9_p2:"📧 <a href=\"mailto:istiharaapp@gmail.com\" style=\"color: #D4AF37;\">istiharaapp@gmail.com</a>",
+      footer_copy:"© 2026 İstihare App. All rights reserved.",
+      footer_links:"<a href=\"index.html\">Home</a> · <a href=\"destek.html\">Support</a>"
+    },
+    ar:{
+      __title:"سياسة الخصوصية – İstihare App",
+      back:"← الرئيسية",
+      h1:"سياسة الخصوصية",
+      date:"آخر تحديث: 24 مارس 2026",
+      intro:"نحن في تطبيق İstihare (\"التطبيق\") نلتزم بحماية خصوصية مستخدمينا. توضّح سياسة الخصوصية هذه كيفية جمع معلوماتك الشخصية واستخدامها وحمايتها عند استخدام تطبيقنا.",
+      s1_h:"1. البيانات التي يتم جمعها",
+      s1_hl:"<strong>لا يجمع تطبيق İstihare بيانات شخصية ولا يخزّنها على الخوادم.</strong>",
+      s1_p1:"يخزّن التطبيق البيانات التالية فقط <strong>على جهازك (التخزين المحلي)</strong>:",
+      s1_li1:"سجلات الاستخارة وتاريخها",
+      s1_li2:"سجل تفسير الأحلام",
+      s1_li3:"تفضيلات المستخدم",
+      s1_p2:"لا تُرسَل هذه البيانات إلى خوادمنا وتُحفَظ على جهازك فقط.",
+      s2_h:"2. خدمة تفسير الأحلام واستخدام الذكاء الاصطناعي من طرف ثالث",
+      s2_hl:"<strong>تعالج ميزة تفسير الأحلام بيانات المستخدم عن طريق إرسالها إلى خوادم OpenAI, Inc. (سان فرانسيسكو، الولايات المتحدة)، وهي خدمة ذكاء اصطناعي تابعة لطرف ثالث.</strong>",
+      s2_p1:"<strong>معلومات خدمة الطرف الثالث:</strong>",
+      s2_li1:"<strong>مزوّد الخدمة:</strong> OpenAI, Inc.",
+      s2_li2:"<strong>النموذج المستخدم:</strong> GPT (نموذج لغوي)",
+      s2_li3:"<strong>الموقع:</strong> الولايات المتحدة الأمريكية",
+      s2_li4:"<strong>سياسة الخصوصية:</strong> <a href=\"https://openai.com/policies/privacy-policy\" target=\"_blank\" style=\"color: #D4AF37;\">سياسة خصوصية OpenAI</a>",
+      s2_p2:"<strong>البيانات المُرسَلة:</strong>",
+      s2_li5:"نص الحلم الذي يُدخِله المستخدم (بحد أقصى 2000 حرف)",
+      s2_li6:"الحالة المزاجية المختارة، إن وُجدت",
+      s2_li7:"نية الاستخارة، إن وُجدت",
+      s2_p3:"<strong>البيانات التي لا تُرسَل إطلاقًا:</strong>",
+      s2_li8:"المعلومات الشخصية مثل الاسم والبريد الإلكتروني ورقم الهاتف",
+      s2_li9:"معرّف Apple أو معلومات الحساب",
+      s2_li10:"معرّفات الجهاز (IDFA وIDFV وغيرها)",
+      s2_li11:"بيانات الموقع الجغرافي",
+      s2_li12:"بيانات استخدام التطبيق الأخرى",
+      s2_p4:"<strong>معالجة البيانات وتخزينها:</strong>",
+      s2_li13:"تتم معالجة نص الحلم مرة واحدة فقط بهدف إنشاء التفسير",
+      s2_li14:"لا يخزّن تطبيقنا البيانات المُرسَلة على خوادمه الخاصة",
+      s2_li15:"سياسة الاحتفاظ بالبيانات الخاصة بـ OpenAI موضّحة في سياسة الخصوصية الخاصة بها",
+      s2_li16:"تُنقَل البيانات بشكل آمن باستخدام تشفير HTTPS (TLS 1.2+)",
+      s2_li17:"تُنقَّى النصوص المُرسَلة من وسوم HTML والمحتوى الضار",
+      s3_h:"3. إذن المستخدم وموافقته",
+      s3_hl:"<strong>قبل استخدام ميزة تفسير الأحلام، يطلب التطبيق من المستخدم إذنًا صريحًا (موافقة).</strong>",
+      s3_p1:"عند رغبتك في تفسير حلم لأول مرة:",
+      s3_li1:"يُوضَّح بشكل صريح ما هي البيانات التي ستُرسَل",
+      s3_li2:"يُحدَّد إلى أين ستُرسَل البيانات (خوادم OpenAI)",
+      s3_li3:"لا تُرسَل أي بيانات قبل أن يضغط المستخدم على زر \"الموافقة والمتابعة\"",
+      s3_li4:"يمكنك رفض مشاركة البيانات عبر خيار \"إلغاء\"",
+      s3_p2:"بعد منح إذنك، يُحفَظ هذا الخيار على جهازك. وإذا حذفت التطبيق وأعدت تثبيته، فسيُطلَب الإذن مرة أخرى.",
+      s4_h:"4. الإعلانات",
+      s4_p1:"يستخدم تطبيقنا خدمة الإعلانات Google AdMob. يعرض AdMob إعلانات غير مخصصة (non-personalized). يمكنك الاطلاع على سياسة الخصوصية الخاصة بـ AdMob عبر <a href=\"https://policies.google.com/privacy\" target=\"_blank\" style=\"color: #D4AF37;\">سياسة خصوصية Google</a>.",
+      s4_p2:"يستخدم تطبيقنا على نظام iOS إطار شفافية تتبّع التطبيقات (ATT) من Apple. ويطلب إذنك لتتبّع الإعلانات؛ وإذا لم تمنح الإذن فلن يتم أي تتبّع.",
+      s5_h:"5. خدمات الطرف الثالث",
+      s5_p1:"يستخدم تطبيقنا خدمات الطرف الثالث التالية:",
+      s5_li1:"<strong>Google AdMob</strong> — عرض الإعلانات — <a href=\"https://policies.google.com/privacy\" target=\"_blank\" style=\"color: #D4AF37;\">سياسة الخصوصية</a>",
+      s5_li2:"<strong>OpenAI, Inc.</strong> — تفسير الأحلام بالذكاء الاصطناعي — <a href=\"https://openai.com/policies/privacy-policy\" target=\"_blank\" style=\"color: #D4AF37;\">سياسة الخصوصية</a>",
+      s5_p2:"تُطبَّق سياسات الخصوصية الخاصة بهذه الخدمات. وقد شُرحت مشاركة بيانات المستخدم مع هذه الخدمات بالتفصيل في الأقسام أعلاه.",
+      s6_h:"6. خصوصية الأطفال",
+      s6_p1:"تطبيقنا غير موجّه للأطفال دون سن 13 عامًا ولا يجمع عن قصد أي معلومات شخصية من الأطفال.",
+      s7_h:"7. أمن البيانات",
+      s7_p1:"تُخزَّن جميع بيانات المستخدم محليًا على جهازك. وتُنقَل نصوص الأحلام بشكل آمن باستخدام تشفير HTTPS. وتُنقَّى مدخلات المستخدم من المحتوى الضار (مثل حقن HTML).",
+      s8_h:"8. التغييرات",
+      s8_p1:"قد يتم تحديث سياسة الخصوصية هذه من حين لآخر. وسيتم الإعلان عن التغييرات المهمة عبر إشعارات داخل التطبيق.",
+      s9_h:"9. التواصل",
+      s9_p1:"لأي أسئلة بخصوص سياسة الخصوصية لدينا، يمكنك التواصل معنا:",
+      s9_p2:"📧 <a href=\"mailto:istiharaapp@gmail.com\" style=\"color: #D4AF37;\">istiharaapp@gmail.com</a>",
+      footer_copy:"© 2026 İstihare App. جميع الحقوق محفوظة.",
+      footer_links:"<a href=\"index.html\">الرئيسية</a> · <a href=\"destek.html\">الدعم</a>"
+    }
+  };
+  function detect(){try{var s=localStorage.getItem("siteLang");if(s&&SUP.indexOf(s)>=0)return s;}catch(e){}
+    var ls=[navigator.language].concat(navigator.languages||[]);
+    for(var i=0;i<ls.length;i++){var b=(ls[i]||"").toLowerCase().split("-")[0];if(SUP.indexOf(b)>=0)return b;}return "en";}
+  function apply(lang){
+    var d=T[lang]||T.en;
+    document.documentElement.lang=lang;
+    document.documentElement.dir=(lang==="ar")?"rtl":"ltr";
+    if(d.__title)document.title=d.__title;
+    document.querySelectorAll("[data-i18n]").forEach(function(el){var k=el.getAttribute("data-i18n");if(d[k]!=null)el.textContent=d[k];});
+    document.querySelectorAll("[data-i18n-html]").forEach(function(el){var k=el.getAttribute("data-i18n-html");if(d[k]!=null)el.innerHTML=d[k];});
+    document.querySelectorAll("#langSwitch button").forEach(function(b){b.style.opacity=(b.getAttribute("data-l")===lang)?"1":"0.45";});
+  }
+  function setLang(l){try{localStorage.setItem("siteLang",l);}catch(e){}apply(l);}
+  var sw=document.getElementById("langSwitch"),lab={tr:"TR",az:"AZ",en:"EN",ar:"ع"};
+  SUP.forEach(function(l){var b=document.createElement("button");b.textContent=lab[l];b.setAttribute("data-l",l);
+    b.style.cssText="background:none;border:none;color:#D4AF37;font-size:13px;font-weight:700;cursor:pointer;padding:4px 9px;border-radius:999px;line-height:1;";
+    b.onclick=function(){setLang(l);};sw.appendChild(b);});
+  apply(detect());
+})();
+</script>
 </body>
 </html>

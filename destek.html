@@ -28,7 +28,7 @@
         h1 { color: #D4AF37; font-size: 28px; margin-bottom: 24px; }
         h2 { color: #D4AF37; font-size: 18px; margin: 28px 0 12px; }
         p { color: #C0C0A0; font-size: 14px; margin-bottom: 12px; }
-        
+
         .contact-card {
             background: rgba(30,50,30,0.5);
             border: 1px solid rgba(212,175,55,0.2);
@@ -61,46 +61,157 @@
 <body>
     <div class="bg-pattern"></div>
     <div class="container">
-        <a href="index.html" class="back">← Ana Sayfa</a>
-        
-        <h1>Destek</h1>
-        <p>İstihare uygulamasıyla ilgili sorularınız, önerileriniz veya hata bildirileriniz için bizimle iletişime geçebilirsiniz.</p>
+        <a href="index.html" class="back" data-i18n="back">← Ana Sayfa</a>
+
+        <h1 data-i18n="h1">Destek</h1>
+        <p data-i18n="intro">İstihare uygulamasıyla ilgili sorularınız, önerileriniz veya hata bildirileriniz için bizimle iletişime geçebilirsiniz.</p>
 
         <div class="contact-card">
             <div class="icon">📧</div>
-            <h3>E-posta ile İletişim</h3>
+            <h3 data-i18n="contactTitle">E-posta ile İletişim</h3>
             <a href="mailto:istiharaapp@gmail.com">istiharaapp@gmail.com</a>
-            <p style="margin-top: 12px; font-size: 12px;">Genellikle 24 saat içinde yanıt veriyoruz.</p>
+            <p style="margin-top: 12px; font-size: 12px;" data-i18n="contactNote">Genellikle 24 saat içinde yanıt veriyoruz.</p>
         </div>
 
-        <h2>Sıkça Sorulan Sorular</h2>
+        <h2 data-i18n="faqTitle">Sıkça Sorulan Sorular</h2>
         <div class="faq">
             <div class="faq-item">
-                <h3>İstihare nasıl yapılır?</h3>
-                <p>Uygulamadaki "Kur'an İstiharesi" modülünü açın. Uygulama sizi adım adım yönlendirecektir: abdest alın, iki rekât namaz kılın, dua edin ve Kur'an'dan bir sayfa açın.</p>
+                <h3 data-i18n="q1">İstihare nasıl yapılır?</h3>
+                <p data-i18n="a1">Uygulamadaki "Kur'an İstiharesi" modülünü açın. Uygulama sizi adım adım yönlendirecektir: abdest alın, iki rekât namaz kılın, dua edin ve Kur'an'dan bir sayfa açın.</p>
             </div>
             <div class="faq-item">
-                <h3>Rüya tabiri nasıl çalışır?</h3>
-                <p>Rüyanızı yazın, uygulama İbn-i Sirin'in İslami rüya tabiri kaynaklarındaki 2086 sembolü tarayarak anlamlı bir yorum oluşturur. Yapay zeka destekli yorum, yalnızca bu kaynaklara dayanır.</p>
+                <h3 data-i18n="q2">Rüya tabiri nasıl çalışır?</h3>
+                <p data-i18n="a2">Rüyanızı yazın, uygulama İbn-i Sirin'in İslami rüya tabiri kaynaklarındaki 2086 sembolü tarayarak anlamlı bir yorum oluşturur. Yapay zeka destekli yorum, yalnızca bu kaynaklara dayanır.</p>
             </div>
             <div class="faq-item">
-                <h3>İstihareye yatmak ne kadar sürer?</h3>
-                <p>Uygulama 7 geceye kadar istihare takibi yapmanızı sağlar. Her sabah rüyanızı ve hislerinizi kaydedebilirsiniz.</p>
+                <h3 data-i18n="q3">İstihareye yatmak ne kadar sürer?</h3>
+                <p data-i18n="a3">Uygulama 7 geceye kadar istihare takibi yapmanızı sağlar. Her sabah rüyanızı ve hislerinizi kaydedebilirsiniz.</p>
             </div>
             <div class="faq-item">
-                <h3>Verilerim güvende mi?</h3>
-                <p>Evet. Tüm kayıtlarınız yalnızca cihazınızda saklanır. Sunucularımızda kişisel veriniz tutulmaz. Rüya metinleri yalnızca yorum oluşturmak için geçici olarak işlenir ve saklanmaz.</p>
+                <h3 data-i18n="q4">Verilerim güvende mi?</h3>
+                <p data-i18n="a4">Evet. Tüm kayıtlarınız yalnızca cihazınızda saklanır. Sunucularımızda kişisel veriniz tutulmaz. Rüya metinleri yalnızca yorum oluşturmak için geçici olarak işlenir ve saklanmaz.</p>
             </div>
             <div class="faq-item">
-                <h3>Uygulama dini fetva yerine geçer mi?</h3>
-                <p>Hayır. Uygulama genel rehberlik sağlar. Önemli kararlarınızda mutlaka ehil din âlimlerine danışmanız tavsiye edilir.</p>
+                <h3 data-i18n="q5">Uygulama dini fetva yerine geçer mi?</h3>
+                <p data-i18n="a5">Hayır. Uygulama genel rehberlik sağlar. Önemli kararlarınızda mutlaka ehil din âlimlerine danışmanız tavsiye edilir.</p>
             </div>
         </div>
 
         <div class="footer">
-            <p>© 2026 İstihare App. Tüm hakları saklıdır.</p>
-            <p style="margin-top: 8px;"><a href="index.html">Ana Sayfa</a> · <a href="gizlilik.html">Gizlilik Politikası</a></p>
+            <p data-i18n="copyright">© 2026 İstihare App. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 8px;" data-i18n-html="footerLinks"><a href="index.html">Ana Sayfa</a> · <a href="gizlilik.html">Gizlilik Politikası</a></p>
         </div>
     </div>
+
+<div id="langSwitch" style="position:fixed;top:14px;right:14px;z-index:9999;display:flex;gap:2px;background:rgba(20,30,20,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(212,175,55,.3);border-radius:999px;padding:4px;"></div>
+<script>
+(function(){
+  var SUP=["tr","az","en","ar"];
+  var T={
+    tr:{
+      __title:"Destek – İstihare App",
+      back:"← Ana Sayfa",
+      h1:"Destek",
+      intro:"İstihare uygulamasıyla ilgili sorularınız, önerileriniz veya hata bildirileriniz için bizimle iletişime geçebilirsiniz.",
+      contactTitle:"E-posta ile İletişim",
+      contactNote:"Genellikle 24 saat içinde yanıt veriyoruz.",
+      faqTitle:"Sıkça Sorulan Sorular",
+      q1:"İstihare nasıl yapılır?",
+      a1:"Uygulamadaki \"Kur'an İstiharesi\" modülünü açın. Uygulama sizi adım adım yönlendirecektir: abdest alın, iki rekât namaz kılın, dua edin ve Kur'an'dan bir sayfa açın.",
+      q2:"Rüya tabiri nasıl çalışır?",
+      a2:"Rüyanızı yazın, uygulama İbn-i Sirin'in İslami rüya tabiri kaynaklarındaki 2086 sembolü tarayarak anlamlı bir yorum oluşturur. Yapay zeka destekli yorum, yalnızca bu kaynaklara dayanır.",
+      q3:"İstihareye yatmak ne kadar sürer?",
+      a3:"Uygulama 7 geceye kadar istihare takibi yapmanızı sağlar. Her sabah rüyanızı ve hislerinizi kaydedebilirsiniz.",
+      q4:"Verilerim güvende mi?",
+      a4:"Evet. Tüm kayıtlarınız yalnızca cihazınızda saklanır. Sunucularımızda kişisel veriniz tutulmaz. Rüya metinleri yalnızca yorum oluşturmak için geçici olarak işlenir ve saklanmaz.",
+      q5:"Uygulama dini fetva yerine geçer mi?",
+      a5:"Hayır. Uygulama genel rehberlik sağlar. Önemli kararlarınızda mutlaka ehil din âlimlerine danışmanız tavsiye edilir.",
+      copyright:"© 2026 İstihare App. Tüm hakları saklıdır.",
+      footerLinks:"<a href=\"index.html\">Ana Sayfa</a> · <a href=\"gizlilik.html\">Gizlilik Politikası</a>"
+    },
+    az:{
+      __title:"Dəstək – İstihare App",
+      back:"← Ana Səhifə",
+      h1:"Dəstək",
+      intro:"İstixarə tətbiqi ilə bağlı suallarınız, təklifləriniz və ya xəta bildirişləriniz üçün bizimlə əlaqə saxlaya bilərsiniz.",
+      contactTitle:"E-poçt ilə Əlaqə",
+      contactNote:"Adətən 24 saat ərzində cavab veririk.",
+      faqTitle:"Tez-tez Verilən Suallar",
+      q1:"İstixarə necə edilir?",
+      a1:"Tətbiqdəki \"Quran İstixarəsi\" modulunu açın. Tətbiq sizi addım-addım yönləndirəcək: dəstəmaz alın, iki rükət namaz qılın, dua edin və Qurandan bir səhifə açın.",
+      q2:"Yuxu yozumu necə işləyir?",
+      a2:"Yuxunuzu yazın, tətbiq İbn Sirinin İslami yuxu yozumu mənbələrindəki 2086 simvolu tarayaraq mənalı bir şərh yaradır. Süni intellekt dəstəkli şərh yalnız bu mənbələrə əsaslanır.",
+      q3:"İstixarəyə yatmaq nə qədər çəkir?",
+      a3:"Tətbiq 7 gecəyə qədər istixarə izləməyə imkan verir. Hər səhər yuxunuzu və hisslərinizi qeyd edə bilərsiniz.",
+      q4:"Məlumatlarım təhlükəsizdirmi?",
+      a4:"Bəli. Bütün qeydləriniz yalnız cihazınızda saxlanılır. Serverlərimizdə şəxsi məlumatınız saxlanılmır. Yuxu mətnləri yalnız şərh yaratmaq üçün müvəqqəti emal olunur və saxlanılmır.",
+      q5:"Tətbiq dini fətvanın yerini tuturmu?",
+      a5:"Xeyr. Tətbiq ümumi bələdçilik təmin edir. Mühüm qərarlarınızda mütləq səlahiyyətli din alimlərinə müraciət etməniz tövsiyə olunur.",
+      copyright:"© 2026 İstihare App. Bütün hüquqlar qorunur.",
+      footerLinks:"<a href=\"index.html\">Ana Səhifə</a> · <a href=\"gizlilik.html\">Məxfilik Siyasəti</a>"
+    },
+    en:{
+      __title:"Support – İstihare App",
+      back:"← Home",
+      h1:"Support",
+      intro:"You can contact us with any questions, suggestions, or bug reports regarding the İstihare app.",
+      contactTitle:"Contact by Email",
+      contactNote:"We usually respond within 24 hours.",
+      faqTitle:"Frequently Asked Questions",
+      q1:"How is Istikhara performed?",
+      a1:"Open the \"Quran Istikhara\" module in the app. The app will guide you step by step: perform ablution, pray two rak'ahs, recite the supplication, and open a page from the Quran.",
+      q2:"How does dream interpretation work?",
+      a2:"Write down your dream, and the app scans the 2086 symbols from Ibn Sirin's Islamic dream interpretation sources to create a meaningful reading. The AI-assisted interpretation is based solely on these sources.",
+      q3:"How long does Sleep for Istikhara take?",
+      a3:"The app lets you track Istikhara for up to 7 nights. Each morning you can record your dream and your feelings.",
+      q4:"Is my data safe?",
+      a4:"Yes. All your records are stored only on your device. No personal data is kept on our servers. Dream texts are processed only temporarily to generate an interpretation and are not stored.",
+      q5:"Does the app replace a religious fatwa?",
+      a5:"No. The app provides general guidance. For important decisions, you are advised to consult qualified religious scholars.",
+      copyright:"© 2026 İstihare App. All rights reserved.",
+      footerLinks:"<a href=\"index.html\">Home</a> · <a href=\"gizlilik.html\">Privacy Policy</a>"
+    },
+    ar:{
+      __title:"الدعم – İstihare App",
+      back:"← الرئيسية",
+      h1:"الدعم",
+      intro:"يمكنك التواصل معنا بشأن أي أسئلة أو اقتراحات أو بلاغات عن الأخطاء المتعلقة بتطبيق İstihare.",
+      contactTitle:"التواصل عبر البريد الإلكتروني",
+      contactNote:"عادةً ما نرد خلال 24 ساعة.",
+      faqTitle:"الأسئلة الشائعة",
+      q1:"كيف تُؤدَّى الاستخارة؟",
+      a1:"افتح وحدة \"استخارة القرآن\" في التطبيق. سيرشدك التطبيق خطوة بخطوة: توضّأ، وصلِّ ركعتين، وادعُ بدعاء الاستخارة، ثم افتح صفحة من القرآن.",
+      q2:"كيف يعمل تفسير الأحلام؟",
+      a2:"اكتب حلمك، فيقوم التطبيق بمسح 2086 رمزًا من مصادر تفسير الأحلام الإسلامية لابن سيرين لإنشاء تأويل ذي معنى. ويستند التفسير المدعوم بالذكاء الاصطناعي إلى هذه المصادر فقط.",
+      q3:"كم تستغرق مدة النوم للاستخارة؟",
+      a3:"يتيح لك التطبيق متابعة الاستخارة لمدة تصل إلى 7 ليالٍ. وفي كل صباح يمكنك تسجيل حلمك ومشاعرك.",
+      q4:"هل بياناتي آمنة؟",
+      a4:"نعم. تُحفظ جميع سجلاتك على جهازك فقط. ولا تُخزَّن أي بيانات شخصية على خوادمنا. وتُعالَج نصوص الأحلام مؤقتًا فقط لإنشاء التفسير ولا يتم تخزينها.",
+      q5:"هل يحل التطبيق محل الفتوى الشرعية؟",
+      a5:"لا. يقدّم التطبيق إرشادًا عامًّا. وفي قراراتك المهمة يُنصح بأن تستشير العلماء الشرعيين المؤهَّلين.",
+      copyright:"© 2026 İstihare App. جميع الحقوق محفوظة.",
+      footerLinks:"<a href=\"index.html\">الرئيسية</a> · <a href=\"gizlilik.html\">سياسة الخصوصية</a>"
+    }
+  };
+  function detect(){try{var s=localStorage.getItem("siteLang");if(s&&SUP.indexOf(s)>=0)return s;}catch(e){}
+    var ls=[navigator.language].concat(navigator.languages||[]);
+    for(var i=0;i<ls.length;i++){var b=(ls[i]||"").toLowerCase().split("-")[0];if(SUP.indexOf(b)>=0)return b;}return "en";}
+  function apply(lang){
+    var d=T[lang]||T.en;
+    document.documentElement.lang=lang;
+    document.documentElement.dir=(lang==="ar")?"rtl":"ltr";
+    if(d.__title)document.title=d.__title;
+    document.querySelectorAll("[data-i18n]").forEach(function(el){var k=el.getAttribute("data-i18n");if(d[k]!=null)el.textContent=d[k];});
+    document.querySelectorAll("[data-i18n-html]").forEach(function(el){var k=el.getAttribute("data-i18n-html");if(d[k]!=null)el.innerHTML=d[k];});
+    document.querySelectorAll("#langSwitch button").forEach(function(b){b.style.opacity=(b.getAttribute("data-l")===lang)?"1":"0.45";});
+  }
+  function setLang(l){try{localStorage.setItem("siteLang",l);}catch(e){}apply(l);}
+  var sw=document.getElementById("langSwitch"),lab={tr:"TR",az:"AZ",en:"EN",ar:"ع"};
+  SUP.forEach(function(l){var b=document.createElement("button");b.textContent=lab[l];b.setAttribute("data-l",l);
+    b.style.cssText="background:none;border:none;color:#D4AF37;font-size:13px;font-weight:700;cursor:pointer;padding:4px 9px;border-radius:999px;line-height:1;";
+    b.onclick=function(){setLang(l);};sw.appendChild(b);});
+  apply(detect());
+})();
+</script>
 </body>
 </html>
